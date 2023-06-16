@@ -107,9 +107,6 @@
     color: gray;
     margin-left: 30px;
 }
-.row{
-    margin-top: 180px;
-}
 .pic01{
     width:57%;
     position: absolute;
@@ -274,6 +271,13 @@ footer #info, footer #icon{
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    #box2 .pic02{height: 587px ;}
+    #box2 .pic01{
+        position: center;
+        width: auto;
+        margin-top: -15px;
+        height: 468px;}
+        #box2{height: 620px;}
     #box3{
         display: none;
     }
