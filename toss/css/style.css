@@ -1,0 +1,377 @@
+.navbar{
+    background-color: white;
+    border-bottom: none;
+}
+.navbar a{
+    color: #4E5968 ;
+}
+.navbar-brand{
+    position: absolute;
+    top: -10px !important;
+}
+#main{
+    width:100%;
+    height:1080px;
+    background-image: url(../img/new_main.png);
+    padding: 0;
+    
+}
+#main h1{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    padding-top: 150px;
+    font-weight: 900;
+    background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+    /* margin-top: 100px; */
+}
+#main #mobile{display: none;}
+#main div{
+    text-align: center; 
+    margin-top: 50px;
+}
+#main a{
+    display: inline-block;
+    width:150px;
+    height: 40px;
+    background: #192C41;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 40px;
+    opacity: 0.9;
+    text-decoration: none;
+}
+/* 모바일용 버튼 */
+#main a:nth-child(3){
+    display: none;
+}
+#main img{
+    width: 24px;
+    height: 24px;
+}
+#catch{
+    width:100%;
+    background: #F9FAFB;
+    padding:250px 0;
+}
+#catch h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 50px !important;
+}
+/* 모바일용 */
+#catch h2:nth-child(2){
+    display: none;
+}
+#home{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+#home h2, #box5 h2{
+    color: #3182F6;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#home h3, #box5 h3{
+    font-weight: bold;
+    font-size: 50px;
+}
+#box03{
+    float: right;
+    font-size: 22px !important;
+    color: #333D4B;
+}
+#box5{margin-bottom:-100px;}
+#send span{
+    position: absolute;
+    color: #3182F6;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 120px;
+    margin-left: 30px;
+}
+#send .txt1{
+    font-size: 35px ;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-left: 30px;
+}
+#send .txt2{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    margin-left: 30px;
+}
+.row{
+    margin-top: 180px;
+}
+.pic01{
+    width:57%;
+    position: absolute;
+    top:11%;
+    left:22%;
+}
+.pic02{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#box1,#box4{
+    position: relative;
+    height: 300px !important; 
+}
+#box2,#box3{
+    position: relative;
+    height: 936px ;
+}
+#send{
+    background-color: #F9FAFB;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+#mobile_send{display: none;}
+.pic03{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#bespoke{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+.pic04{width: 100%;}
+#top{
+    margin-bottom: 150px;
+    font-size: 60px;
+    font-weight: bold;
+}
+#bottom1{
+    font-weight:bold ;
+    margin-top: 50px;
+}
+#bottom1 div{
+    margin-top: 10px;
+    color: #B0B8C1;
+}
+#box6 .col-sm-6, #box7 .col-sm-6, #box8 .col-sm-6{
+    height: 384px;
+}
+#bottom2{
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333d4b;
+}
+.pic05{
+    padding-top: 250px;
+    width: 90%;
+}
+
+#business{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: black;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.pic06{
+    width: 100%;
+    /* 세로사이즈를 오토로 하면 자동으로 잡힘(높이 안잡으면 오토임) */
+}
+#business .btn{
+    background: #3182F6;
+    color: #F9FAFB;
+}
+#businessbox1 h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+#businessbox1 h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #B0B8C1;
+    margin-bottom: 150px;
+}
+#business .col-sm-2 h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+#business .col-sm-2 h3{
+    font-size: 19px;
+    font-weight: bold;
+    color: #B0B8C1;
+    margin-bottom: 50px;
+}
+ul,li{list-style: none;}
+footer{
+    background: #191F28;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: #636D7E;
+}
+footer .row, footer h4{
+    font-size: 13px;
+}
+footer .title, footer h4{
+    font-weight: bold;
+    color: #A1B8C1;
+    margin-bottom: 10px;
+}
+footer #info{
+    font-size: 11px;
+    color: #838D99;
+    margin-bottom: 25px;
+}
+footer #icon img{opacity: 0.7;}
+footer #info, footer #icon{
+    margin-left: 40px;
+}
+@media screen and (max-width: 767px){
+    #main{
+        background-position: center;
+    }
+    #main h1{display: none;}
+    #main #mobile{
+        padding-top: 100px;
+        display: block;
+        font-size: 30px;
+    }
+    #main a{
+        display: none;
+    }
+    #main a:nth-child(3){
+        display: inline-block;
+        background: #3182F6;
+    }
+    #main div{margin-top: 30px;}
+    #catch{
+        padding: 100px 0;
+    }
+    #catch h2{
+        font-size: 21px;
+    }
+    #catch h2:nth-child(1){
+        display: none;
+    }
+    #catch h2:nth-child(2){
+        display: block;
+    }
+    #home{
+        padding-left: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #box3{
+        display: none;
+    }
+    #home h2, #box5 h2{
+        font-size: 20px;
+    }
+    #home h3, #send h3{
+        font-size: 28px;
+    }
+    #box03{
+        float: none;
+        font-size: 15px !important;
+        margin-top: -30px;
+    }
+    #send{padding: 100px 0;}
+    #box5{margin-bottom: 50px;}
+    #box5 h2{font-size: 20px;}
+    #box5 h3{font-size: 28px;}
+    #send{display: none;}
+    #mobile_send{
+        background-color: #F9FAFB;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        display: block;
+    }
+    #mobile_send span{
+        color: #3182F6;
+        font-weight: bold;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+    #mobile_send .txt1{
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333D4B;
+        padding-left: 40px;
+    }
+    #mobile_send .txt2{
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #6B7684;
+        padding-left: 40px;
+    }
+    .pic03{
+        margin-bottom: 50px;        
+        position: relative;
+    }
+    #bespoke{
+        padding: 100px 40px;
+    }
+    #top{
+        margin-left: -12px;
+        font-size: 35px;
+        margin-bottom: 70px;
+    }
+    .pic04{
+        width: 60%;
+    }
+    #bottom1{
+        margin-top: 35px;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+    .pic05{
+        float: right;
+        display: block;
+        width: 60%;
+        padding-top: 0;
+    }
+    #bottom2{
+        float: right;
+        width: 60%;
+        font-size: 17px;
+    }
+    #business{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    #businessbox1 h1{
+        font-size: 35px;
+    }
+    #businessbox1 h2{
+        margin-bottom: 80px;
+        font-size: 20px;
+    }
+    #business .col-sm-2 h3{
+        margin-bottom: 25px;
+    }
+    .btn{
+        margin-bottom: 70px;
+    }
+    .pic06{
+        width: auto;
+        background-position: center ;
+        height: 600px ;
+    }
+}
+
