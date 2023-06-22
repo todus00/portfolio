@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>다시</title>
+    <title>토스</title>
     <link rel="icon" type="image/png" sizes="32x32" href="https://static.toss.im/tds/favicon/favicon-32x32.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(window).scroll(function(){ 
+            console.log($(window).scrollTop());
+
+            if($(window).scrollTop()<1){
+                $(".navbar").removeClass("navscroll");
+            }
+            if($(window).scrollTop()>1){
+                $(".navbar").addClass("navscroll");
+            } 
+            if($(window).scrollTop()>1000){
+                $("#home h2,#home h3").addClass("animate__animated").addClass("animate__fadeInUp");
+            }
+            if($(window).scrollTop()>1200){
+                $("#box2, #box3").addClass("animate__animated").addClass("animate__fadeInUp");
+            }
+            if($(window).scrollTop()>2500){
+                $("#box5").addClass("animate__animated").addClass("animate__fadeInUp");
+                $("#send .row").addClass("animate__animated").addClass("animate__fadeInUp");
+            }
+            if($(window).scrollTop()>4500){
+                $("#bespoke .col-sm-8").addClass("animate__animated").addClass("animate__fadeInLeft");
+                $("#bespoke .col-sm-4").addClass("animate__animated").addClass("animate__fadeInRight");
+            }
+        });
+    </script>
 </head>
 <body>
     <!-- navigation ------------------------------------------------->
@@ -139,7 +165,7 @@
                 <div class="col-sm-6" >
                     <img class="pic03" src="img/section1_2_02.png" alt="송금전 주의">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" class="content">
                     <span>
                         사기계좌 조회
                     </span>
@@ -157,7 +183,7 @@
         </div>
         <div id="box8" class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6" class="content">
                     <span>
                         자동이체 예약
                     </span>
@@ -176,6 +202,7 @@
             </div>
         </div>
     </div>
+    <!-- mobile 송금 -------------------------------------------------->
     <div id="mobile_send" class="container">
         <div id="box5" class="container">
             <!-- 여백은 회색을 주고 글자는 중심에 있게 하고싶기 대문에 플루이드 안에 container를 넣어 이주으로 사용 -->
@@ -268,7 +295,7 @@
 
     <!-- Business ---------------------------------------------------------->
     <div id="business" class="container-fluid">
-        <img class="pic06" src="img/section4_device.jpg" alt="device">
+        <img class="pic06" src="img/section4_device.jpg" alt="device" >
         <div id="businessbox1" class="container">
             <h1>사업도 토스와 함께</h1>
             <h2>
@@ -279,8 +306,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h2>토스결제</h2>
                     <h3>
                         합리적인 수수료,<br>
@@ -291,7 +317,7 @@
                         <a href="#" class="btn">가맹점 문의하기</a>
                     </p>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h2>내 매출 장부</h2>
                     <h3>
                         내 매출 장부 따로 관리할 필요 없어요.<br>
@@ -302,7 +328,7 @@
                         <a href="#" class="btn">자세히 알아보기</a>
                     </p>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h2>토스페이먼츠</h2>
                     <h3>
                         시작하기 어려웠던 온라인 비즈니스,<br>
@@ -313,7 +339,7 @@
                         <a href="#" class="btn">홈페이지 바로가기</a>
                     </p>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h2>토스플레이스</h2>
                     <h3>
                         포스·주문·결제 시스템까지<br>
@@ -324,7 +350,6 @@
                         <a href="#" class="btn">홈페이지 바로가기</a>
                     </p>
                 </div>
-                <div class="col-sm-2"></div>
             </div>
         </div>
     </div>

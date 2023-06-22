@@ -86,7 +86,7 @@
     font-size: 22px !important;
     color: #333D4B;
 }
-#box5{margin-bottom:-100px;}
+#box5{padding-bottom:-100px;}
 #send span{
     position: absolute;
     color: #3182F6;
@@ -172,14 +172,11 @@
     padding-top: 250px;
     width: 90%;
 }
-
 #business{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding:50px 0 200px 0 ;
     background: black;
-    padding-top: 100px;
-    padding-bottom: 200px;
 }
+#business .row{margin:0 230px;}
 .pic06{
     width: 100%;
     /* 세로사이즈를 오토로 하면 자동으로 잡힘(높이 안잡으면 오토임) */
@@ -201,12 +198,12 @@
     color: #B0B8C1;
     margin-bottom: 150px;
 }
-#business .col-sm-2 h2{
+#business .col-sm-3 h2{
     font-size: 25px;
     font-weight: bold;
     color: white;
 }
-#business .col-sm-2 h3{
+#business .col-sm-3 h3{
     font-size: 19px;
     font-weight: bold;
     color: #B0B8C1;
@@ -236,6 +233,13 @@ footer #icon img{opacity: 0.7;}
 footer #info, footer #icon{
     margin-left: 40px;
 }
+
+/* scroll ***************************************************/
+.navscroll{
+    border-bottom: solid 1px #E5E7EA;
+}
+/* scroll.End ***************************************************/
+
 @media screen and (max-width: 767px){
     #main{
         background-position: center;
@@ -277,12 +281,13 @@ footer #info, footer #icon{
         width: auto;
         margin-top: -15px;
         height: 468px;}
-        #box2{height: 620px;}
+    #box2{height: 620px;}
     #box3{
         display: none;
     }
     #home h2, #box5 h2{
         font-size: 20px;
+        padding-bottom: 0;
     }
     #home h3, #send h3{
         font-size: 28px;
@@ -359,6 +364,7 @@ footer #info, footer #icon{
         padding-top: 20px;
         padding-bottom: 30px;
     }
+    #business .row{margin:0;}
     #businessbox1 h1{
         font-size: 35px;
     }
@@ -372,10 +378,4 @@ footer #info, footer #icon{
     .btn{
         margin-bottom: 70px;
     }
-    .pic06{
-        width: auto;
-        background-position: center ;
-        height: 600px ;
-    }
 }
-
